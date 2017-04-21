@@ -5,17 +5,17 @@
 <div style=text-align:center;> 
 
 <style>
- 
+  
   h2 {
     font-family: Lobster, Monospace;
     font-size: 35px;
-    color: white;
+    color: blue;
   }
  
   p {
     font-size: 30px;
     font-family: Lucida Calligraphy;
-    color:red;
+    color:purple;
 }
 
   ul {
@@ -35,35 +35,50 @@
   }
   
 body {
-            background-image: url("http://s85.youmaker.com/other/2015/7-18/oth132873662bdf60100e5354fa29ea0808bdbb691a10850.jpg");
+            background-image: url("http://sf.epochtimes.com/wp-content/uploads/2014/06/m5.jpeg");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
-        }        
+        }  
+        #gotop {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;    
+    padding: 10px 15px;    
+    font-size: 20px;
+    background: #777;
+    color: white;
+    cursor: pointer;
+}      
 </style>
-
 <div> 
 <marquee>
 <font background-color=lightgreen size="5"><strong>I  major  in  MIIA  at  FuJen  University ~ ~ </strong></font> 
 </marquee>
-
-<h2 color="white"> Welcome  to  my  GitHub  Page , Here's  my  Curriculum  Vitae</h2>
-<a><img width="200" height="200" class="smaller-image" alt="My photo." src="https://scontent.xx.fbcdn.net/v/t1.0-1/p320x320/17190412_802868643187736_5361758430967929897_n.jpg?oh=d85664258db415cbd564d2160fa72b68&oe=59684CB5" style="border:10px pink double"></a>
+<div id="gotop">˄</div>
+<h2 color="blue"> Welcome  to  my  GitHub  Page , Here's  my  Curriculum  Vitae</h2>
+<a><img width="200" height="200" class="smaller-image" alt="My photo." src="https://scontent.xx.fbcdn.net/v/t1.0-1/p320x320/17190412_802868643187736_5361758430967929897_n.jpg?oh=d85664258db415cbd564d2160fa72b68&oe=59684CB5" style="border: 10px pink groove"></a>
  
 <p>Click here to see<a href="https://www.facebook.com/profile.php?id=100003938222506"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2000px-Facebook_icon.svg.png" width="30" height="30">Weiting's Facebook</a></p>
  <p >Click here to know what is<a href="http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp"> MIIA</a>.</p>
- <script>
-  $(document).ready(function() {
-    $("#target1").css("color", "red");
-    $("#target1").prop("disabled", true);
-    
-    $("#target2").appendTo("#right-well");
-    
-    $("#target1").parent().css("background-color", "red");
-    $("#right-well").children().css("color", "orange");
-$(".target:nth-child(2)").addClass("animated bounce");
-  });
+ 
+ <script type="text/javascript">
+$(function(){
+    $("#gotop").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },1000);
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300){
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+});
 </script>
 <div class="container-fluid">
   <h3 class="text-primary text-center">jQuery Playground</h3>
