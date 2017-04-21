@@ -53,6 +53,7 @@ body {
     cursor: pointer;
 }      
 </style>
+
 <div> 
 <marquee>
 <font background-color=lightgreen size="5"><strong>I  major  in  MIIA  at  FuJen  University ~ ~ </strong></font> 
@@ -63,7 +64,8 @@ body {
  
 <p>Click here to see<a href="https://www.facebook.com/profile.php?id=100003938222506"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2000px-Facebook_icon.svg.png" width="30" height="30">Weiting's Facebook</a></p>
  <p >Click here to know what is<a href="http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp"> MIIA</a>.</p>
- 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script type="text/javascript">
 
 $(function(){
@@ -73,7 +75,7 @@ $(function(){
         },1000);
     });
     $(window).scroll(function() {
-        if ( $(this).scrollTop() > 50){
+        if ( $(this).scrollTop() > 100){
             $('#gotop').fadeIn("fast");
         } else {
             $('#gotop').stop().fadeOut("fast");
