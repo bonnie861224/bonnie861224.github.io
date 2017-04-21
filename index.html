@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css?family=Comic Sans MS" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Nova Oval" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Indie Flower" rel="stylesheet" type="text/css">
-
+<link href="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript">
 <div style=text-align:center;> 
 
 <style>
@@ -64,7 +64,8 @@ body {
 <p>Click here to see<a href="https://www.facebook.com/profile.php?id=100003938222506"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2000px-Facebook_icon.svg.png" width="30" height="30">Weiting's Facebook</a></p>
  <p >Click here to know what is<a href="http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp"> MIIA</a>.</p>
  
- <script type="text/javascript">
+<script type="text/javascript">
+
 $(function(){
     $("#gotop").click(function(){
         jQuery("html,body").animate({
@@ -72,7 +73,7 @@ $(function(){
         },1000);
     });
     $(window).scroll(function() {
-        if ( $(this).scrollTop() > 300){
+        if ( $(this).scrollTop() > 50){
             $('#gotop').fadeIn("fast");
         } else {
             $('#gotop').stop().fadeOut("fast");
@@ -80,27 +81,6 @@ $(function(){
     });
 });
 </script>
-<div class="container-fluid">
-  <h3 class="text-primary text-center">jQuery Playground</h3>
-  <div class="row">
-    <div class="col-xs-6">
-      <h4>#left-well</h4>
-      <div class="well" id="left-well">
-        <button class="btn btn-default target" id="target1">#target1</button>
-        <button class="btn btn-default target" id="target2">#target2</button>
-        <button class="btn btn-default target" id="target3">#target3</button>
-      </div>
-    </div>
-    <div class="col-xs-6">
-      <h4>#right-well</h4>
-      <div class="well" id="right-well">
-        <button class="btn btn-default target" id="target4">#target4</button>
-        <button class="btn btn-default target" id="target5">#target5</button>
-        <button class="btn btn-default target" id="target6">#target6</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div>
 
