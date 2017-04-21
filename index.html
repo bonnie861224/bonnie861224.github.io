@@ -1,132 +1,120 @@
-<!DOCTYPE html>
-<html>
+<link href="https://fonts.googleapis.com/css?family=Comic Sans MS" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nova Oval" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Indie Flower" rel="stylesheet" type="text/css">
+
+<div style=text-align:center;> 
 
 <style>
-
-  .blue-text {
-
-    color: blue;
-
-  }
-
-  h2{
-
+ 
+  h2 {
     font-family: Lobster, Monospace;
-
+    font-size: 35px;
+    color: white;
   }
-
+ 
   p {
-
-    font-size: 22px;
-
+    font-size: 30px;
     font-family: Lucida Calligraphy;
+    color:red;
+}
 
-    color:black;
-
-  }
-  li {
-
-    font-size: 20px;
-
+  ul {
+    font-size: 25px;
     font-family:Segoe Print;
-
-    color:brown;
+    color:black;
   }
-   .marquee{
-    font-size: 50px;
-
-    font-family:Cooper Black;
-
+  marquee{
+    font-size: 35px;
+    font-family:Segoe Print;
+    color:black;
     background-color:lightgreen; 
   }
-
-  .thick-yellow-border {
-
-    border-color: yellow;
-
-    border-width: 20px;
-
-    border-style: groove;
-
-    border-radius: 50%;
-
-  }
-
   .smaller-image {
 
     width: 200px;
-
   }
-
-  .pink-background{
-  background-color: pink;
-  }
-  }
-  }
-
+  
+body {
+            background-image: url("http://s85.youmaker.com/other/2015/7-18/oth132873662bdf60100e5354fa29ea0808bdbb691a10850.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }        
 </style>
 
-<marquee class="marquee">I  major  in  MIIA  at  FuJen  University ~ ~ </marquee>
+<div> 
+<marquee>
+<font background-color=lightgreen size="5"><strong>I  major  in  MIIA  at  FuJen  University ~ ~ </strong></font> 
+</marquee>
 
-<h2 class="blue-text"> Welcome  to  my  GitHub  Page ,  Here's  my  Curriculum  Vitae</h2>
-
-<body class="pink-background">
-
- <p>Click here to see<a href="https://www.facebook.com/profile.php?id=100003938222506"> Weiting's Facebook</a>.</p>
- <p>Click here to know what is<a href="http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp"> MIIA</a>.</p>
-
-<a href="#"><img class="smaller-image thick-yellow-border" src="https://scontent.xx.fbcdn.net/v/t1.0-1/p320x320/17190412_802868643187736_5361758430967929897_n.jpg?oh=d85664258db415cbd564d2160fa72b68&oe=59684CB5"></a>
-  
+<h2 color="white"> Welcome  to  my  GitHub  Page , Here's  my  Curriculum  Vitae</h2>
+<a><img width="200" height="200" class="smaller-image" alt="My photo." src="https://scontent.xx.fbcdn.net/v/t1.0-1/p320x320/17190412_802868643187736_5361758430967929897_n.jpg?oh=d85664258db415cbd564d2160fa72b68&oe=59684CB5" style="border:10px pink double"></a>
+ 
+<p>Click here to see<a href="https://www.facebook.com/profile.php?id=100003938222506"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2000px-Facebook_icon.svg.png" width="30" height="30">Weiting's Facebook</a></p>
+ <p >Click here to know what is<a href="http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp"> MIIA</a>.</p>
+ <script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    
+    $("#target2").appendTo("#right-well");
+    
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+$(".target:nth-child(2)").addClass("animated bounce");
+  });
+</script>
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div>
 
- <p>Personal interests:</p>
+ <p >Personal interests:</p>
 
-  <ul>
+    <ul>playing piano</ul>
 
-    <li>playing piano</li>
+    <ul>reading extracurricular reading material</ul>
 
-    <li>reading extracurricular reading material</li>
-
-    <li>hung out with friends</li>
-
-  </ul>
+    <ul>hung out with friends</ul>
 
   <p>Work experience:</p>
 
-  <ul>
+    <ul>part-time job: Macdonald</ul>
 
-    <li>part-time job: Macdonald</li>
-
-    <li>part-time job: sell clothes</li>
-
-
-  </ul>
+    <ul>part-time job: sell clothes</ul>
 
   <p>Personal data:</p>
 
-  <ul>
+    <ul>name: Wei-Ting Chang</ul>
 
-    <li>name: Wei-Ting Chang</li>
-
-    <li>e-mail adress: b22379222@gmail.com</li>
-
-  </ul>
+    <ul>e-mail adress: b22379222@gmail.com</ul>
 
    <p>Education:</p>
 
-  <ul>
+    <ul>Graduated from LongFu Elementary School in 2010</ul>
 
-    <li>Graduated from LongFu Elementary School in 2010</li>
-
-    <li>Graduated from ChongPing Junior High School in 2013</li>
+    <ul>Graduated from ChongPing Junior High School in 2013</ul>
     
-    <li>Graduated from DanFeng Senior High School in 2016</li>
-
-  </ul>
+    <ul>Graduated from DanFeng Senior High School in 2016</ul>
 
 </div>
-
-</body>
-
-</html>
