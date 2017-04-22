@@ -1,7 +1,14 @@
 <link href="https://fonts.googleapis.com/css?family=Comic Sans MS" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Nova Oval" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Indie Flower" rel="stylesheet" type="text/css">
-<link href="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+
 <div style=text-align:center;> 
 
 <style>
@@ -65,7 +72,6 @@ body {
 <p>Click here to see<a href="https://www.facebook.com/profile.php?id=100003938222506"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2000px-Facebook_icon.svg.png" width="30" height="30">Weiting's Facebook</a></p>
  <p >Click here to know what is<a href="http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp"> MIIA</a>.</p>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script type="text/javascript">
 
 $(function(){
@@ -83,7 +89,21 @@ $(function(){
     });
 });
 </script>
+<div data-role="page" id="pageone">
+  <div data-role="header">
+  </div>
 
+  <div data-role="main" class="ui-content">
+  <div data-role="controlgroup" data-type="horizontal">
+    <a href="#home" data-rel="popup" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
+    <a href="#prepage" data-rel="popup" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous Page</a>
+    <a href="#nextpage" data-rel="popup" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Next Page</a>
+    <a href="#search" data-rel="popup" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
+  </div><br>
+<div data-role="popup" id="home">
+      <p>This is a home page.</p>
+    </div>
+</div> 
 <div>
 
  <p >Personal interests:</p>
