@@ -1,13 +1,11 @@
 <link href="https://fonts.googleapis.com/css?family=Comic Sans MS" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Nova Oval" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Indie Flower" rel="stylesheet" type="text/css">
-<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-</head>
 
 <div style=text-align:center;> 
 
@@ -59,12 +57,41 @@ body {
     color: white;
     cursor: pointer;
 }      
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
 </style>
 
 <div> 
 <marquee>
 <font background-color=lightgreen size="5"><strong>I  major  in  MIIA  at  FuJen  University ~ ~ </strong></font> 
 </marquee>
+<div class="scrollmenu">
+  <a href="https://bonnie861224.github.io/">Home</a>
+  <a href="#news">Previos</a>
+  <a href="#contact">Next</a>
+  <a href="https://www.facebook.com/profile.php?id=100003938222506">Facebook</a>
+  <a href="https://www.instagram.com/bonny861224/">Instagram</a>
+  <a href="https://www.linkedin.com/in/%E7%91%8B%E5%BA%AD-%E5%BC%B5-07886412a/">LinkedIn</a>
+  <a href="https://github.com/bonnie861224">Github</a>
+  <a href="http://www.miia.fju.edu.tw/layout/oneorange/vvindex.jsp">About</a>
+  <a href="https://www.google.com.tw/webhp?hl=zh-TW&sa=X&ved=0ahUKEwix1qrl-rnTAhWHppQKHWksDD4QPAgD">Google</a>
+  <a href="#tools">Tools</a> 
+</div>
 <div id="gotop">˄</div>
 <h2 color="blue"> Welcome  to  my  GitHub  Page , Here's  my  Curriculum  Vitae</h2>
 <a><img width="200" height="200" class="smaller-image" alt="My photo." src="https://scontent.xx.fbcdn.net/v/t1.0-1/p320x320/17190412_802868643187736_5361758430967929897_n.jpg?oh=d85664258db415cbd564d2160fa72b68&oe=59684CB5" style="border: 10px pink groove"></a>
@@ -89,19 +116,7 @@ $(function(){
     });
 });
 </script>
-<div data-role="page" id="pageone">
-  <div data-role="header">
-  </div>
 
-  <div data-role="main" class="ui-content">
-  <div data-role="controlgroup" data-type="horizontal">
-    <a href="#home" data-rel="popup" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
-    <a href="#prepage" data-rel="popup" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous Page</a>
-    <a href="#nextpage" data-rel="popup" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Next Page</a>
-    <a href="#search" data-rel="popup" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
-  </div><br>
-    </div>
-</div> 
 <div>
 
  <p >Personal interests:</p>
